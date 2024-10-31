@@ -1,0 +1,29 @@
+{
+  "name": "js-unit-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "npx mocha \"test/**/*.test.js\" ",
+    "test:watch": "npm test -- --watch",
+    "test:coverage": "nyc npm test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/register": "^7.25.9",
+    "@babel/runtime": "^7.26.0",
+    "chai": "^5.1.2",
+    "nyc": "^17.1.0",
+    "sinon": "^19.0.2",
+    "sinon-chai": "^4.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^10.8.2"
+  }
+}
